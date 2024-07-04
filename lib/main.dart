@@ -45,10 +45,6 @@ class _MyAppState extends State<MyApp> {
         ),
       ),
       darkTheme: ThemeData.dark().copyWith(
-        // Customize dark theme if needed
-        // Example:
-        // primaryColor: Colors.grey[900],
-        // accentColor: Colors.blueAccent,
       ),
       home: CryptoListScreen(selectedCurrency: _selectedCurrency, onChangeCurrency: _changeCurrency),
     );
@@ -199,7 +195,6 @@ class _CryptoListScreenState extends State<CryptoListScreen> {
                   ),
                 ),
                 onTap: () {
-                  // Handle onTap event
                   print('Tapped ${crypto.name}');
                 },
               ),
